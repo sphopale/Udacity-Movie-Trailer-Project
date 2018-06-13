@@ -12,7 +12,7 @@ def create_movies_details():
 
     This function gets the details of the movies listed in the fav_movie_list
     from the The Movie Database API and returns the details.
-    
+
     Return:
         movies: An array of Movie instances.
     """
@@ -21,18 +21,18 @@ def create_movies_details():
     for x in range(len(fav_movie_list)):
         movie = get_json_details(fav_movie_list[x]['Name'])
         movie = media.Movie(movie["title"], movie["overview"],
-                                          get_poster_url() +
-                                          movie["poster_path"],
-                                          get_movie_trailer(movie["id"]))
+                            get_poster_url() +
+                            movie["poster_path"],
+                            get_movie_trailer(movie["id"]))
         movies.insert(x, movie)
     fresh_tomatoes.open_movies_page(movies)
 
 
 def get_json_details(fav_movie):
     """ Get the json details from The Movie Database
-    
-    This function gets the details based on the favourite movies in the list 
-    from  The Movie database 
+
+    This function gets the details based on the favourite movies in the list
+    from  The Movie database
 
     Args: Takes favourite movies list
 
@@ -52,10 +52,10 @@ def get_json_details(fav_movie):
 
 def get_movie_trailer(movie_id):
     """ Get the movie trailer link from the movie database
-    
-    This function returns the details of the link to the movie trailer 
+
+    This function returns the details of the link to the movie trailer
     database
-    
+
     Args: movie_id from The Movie Database
 
     Returns:
@@ -75,11 +75,10 @@ def get_movie_trailer(movie_id):
 
 def get_poster_url():
     """ Get the movie poster base url from the movie database
-    
-    This function returns the details of the base url details to 
+
+    This function returns the details of the base url details to
     the movie poster  database
-    
-    
+
     Returns:
        base url for the poster url
     """
