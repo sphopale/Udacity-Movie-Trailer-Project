@@ -1,5 +1,6 @@
 class Movie():
-    """ Creates the movie abstarct class, which will be used to create movie instances.
+    """ Creates the movie abstarct class, which will be used to create
+        movie instances.
 
       Attributes:
         movie_title: This is the title of the movie (String).
