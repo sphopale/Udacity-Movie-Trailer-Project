@@ -2,11 +2,11 @@ import csv
 
 
 def get_fav_movies():
-    """ Get the favorite movie list from the csv file 
-    
-    This function returns the details of the favorite movies 
-    fro the csv file
-    
+    """ Get the favorite movie list from the csv file
+
+    This function returns the details of the favorite movies
+    from the csv file
+
     Returns:
        array of the favorite movie
     """
