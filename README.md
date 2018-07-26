@@ -7,7 +7,7 @@ You will write server-side code to store a list of your favorite movies, includi
 
 
 ### Project Flow
-This project uses Python to read the my_favourite_movies.csv file, which has the list of my favourite movies and dynamically reasd the movies, queries the onformation from the  [The Movie Database API](https://www.themoviedb.org/documentation/api?language=en)
+This project uses Python to read the my_favourite_movies.csv file, which has the list of my favourite movies and dynamically reads the movies, queries the information from the  [The Movie Database API](https://www.themoviedb.org/documentation/api?language=en)
 
 ### How to run this project
  * Install [Python](https://www.python.org/) (Works with Python 3 )
